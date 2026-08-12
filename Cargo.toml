@@ -1,0 +1,10 @@
+[package]
+name = "aethar_shield"
+version = "0.1.0"
+edition = "2021"
+authors = ["Adiguna Sopyan <https://github.com/adiguna-sopyan>"]
+description = "AetharShield Protocol: Post-Quantum Hardened Architecture"
+
+[dependencies]
+# Zero external crypto dependencies for maximum security and auditability
+rand = "0.8.5"
