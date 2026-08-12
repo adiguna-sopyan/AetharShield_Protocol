@@ -41,7 +41,7 @@ For a complete mathematical proof and parameter breakdown, see [docs/WHITEPAPER.
 
 ```bash
 # Clone the repository
-git clone [https://github.com/your-username/aether-shield.git](https://github.com/your-username/aether-shield.git)
+git clone [https://github.com/adiguna-sopyan/aether-shield.git](https://github.com/your-username/aether-shield.git)
 cd aether-shield/python-bindings
 
 # Run test vectors
