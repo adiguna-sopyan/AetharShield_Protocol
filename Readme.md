@@ -40,11 +40,11 @@ For a complete mathematical proof and parameter breakdown, see [docs/WHITEPAPER.
 ## Quickstart (Python Prototype)
 
 ```bash
-# Clone the repository
-git clone [https://github.com/adiguna-sopyan/aether-shield.git](https://github.com/your-username/aether-shield.git)
+# Clone the repositorya
+git clone [https://github.com/adiguna-sopyan/AetheShield_protocol.git](https://github.com/adiguna-sopyan/AetheShield_protocol.git)
 cd aether-shield/python-bindings
 
-# Run test vectors
+# Run test vectorsqq
 python3 -m unittest discover tests
 ```
 
