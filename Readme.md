@@ -1,7 +1,8 @@
-# AetherShield Protocol
+# AetharShield Protocol
 
 > **A Next-Gen Post-Quantum Cryptographic Primitive Layer with Dynamic Noise-Injected Lattice (HD-NIL) & Ephemeral Bit Permutation.**
 
+[![DOI](https://img.shields.io/badge/DOI-10.6084%2Fm9.figshare.33238461-blue.svg)](https://doi.org/10.6084/m9.figshare.33238461)
 ![License](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue)
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![Security Level](https://img.shields.io/badge/security-NIST--Level--5-orange)
