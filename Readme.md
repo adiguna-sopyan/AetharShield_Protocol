@@ -86,3 +86,11 @@ We actively invite researchers to break the implementation. Test vectors and tar
 Dual-licensed under either of:
 - Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE) or http://www.apache.org/licenses/LICENSE-2.0)
 - MIT license ([LICENSE-MIT](LICENSE) or http://opensource.org/licenses/MIT)
+
+---
+
+## Acknowledgements & Special Thanks
+
+We express our gratitude to the independent cybersecurity researchers who performed cryptanalysis audits on the AetharShield Protocol:
+
+- **suuf24** ([GitHub: suuf24](https://github.com/suuf24)) — Identified DPL seed space reduction (DPL-001) and challenge artifacts in early research builds, driving the hardening of the Fisher-Yates permutation layer and full Level-2 challenge generation.

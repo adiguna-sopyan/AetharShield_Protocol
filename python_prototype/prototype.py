@@ -29,20 +29,33 @@ class AetharShieldPrototype:
         return u, v
 
     def apply_dpl_permutation(self, u, seed=42):
-        # Dynamic Permutation Layer (DPL)
-        np.random.seed(seed)
+        # Secure Fisher-Yates Permutation
         permuted_u = u.copy()
-        np.random.shuffle(permuted_u)
+        n = len(permuted_u)
+        state = seed & 0xFFFFFFFF  # Masking 32-bit agar aman di NumPy
+        
+        for i in range(n - 1, 0, -1):
+            state = (state * 1103515245 + 12345) & 0x7FFFFFFF  # LCG Generator
+            j = state % (i + 1)
+            permuted_u[i], permuted_u[j] = permuted_u[j], permuted_u[i]
+            
         return permuted_u
 
     def restore_dpl_permutation(self, permuted_u, seed=42):
-        # Restore DPL Permutation
-        np.random.seed(seed)
-        idx = np.arange(len(permuted_u))
-        np.random.shuffle(idx)
+        # Restore Fisher-Yates Permutation
+        unshuffled_u = permuted_u.copy()
+        n = len(unshuffled_u)
+        state = seed & 0xFFFFFFFF
         
-        unshuffled_u = np.zeros_like(permuted_u)
-        unshuffled_u[idx] = permuted_u
+        swaps = []
+        for i in range(n - 1, 0, -1):
+            state = (state * 1103515245 + 12345) & 0x7FFFFFFF
+            j = state % (i + 1)
+            swaps.append((i, j))
+            
+        for i, j in reversed(swaps):
+            unshuffled_u[i], unshuffled_u[j] = unshuffled_u[j], unshuffled_u[i]
+            
         return unshuffled_u
 
     def decrypt_bit(self, secret_key, u, v):
