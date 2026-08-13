@@ -41,7 +41,7 @@ For a complete mathematical proof and parameter breakdown, see [docs/WHITEPAPER.
 
 ```bash
 # Clone the repositorya
-git clone [https://github.com/adiguna-sopyan/AetherShield_protocol.git](https://github.com/adiguna-sopyan/AetherShield_protocol.git)
+git clone [https://github.com/adiguna-sopyan/AetharShield_Protocol](https://github.com/adiguna-sopyan/AetharShield_Protocol)
 cd aether-shield/python-bindings
 
 # Run test vectorsqq
