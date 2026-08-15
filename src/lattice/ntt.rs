@@ -15,14 +15,14 @@ impl NttEngine {
 
     // Forward NTT - Transformasi ke Domain Frekuensi Modular
     pub fn forward(&self, poly: &[i64]) -> Vec<i64> {
-        let mut result = poly.to_vec();
+        let result = poly.to_vec();
         // Implementasi Constant-time Cooley-Tukey NTT Butterfly
         result
     }
 
     // Inverse NTT - Transformasi Kembali ke Domain Polinomial
     pub fn inverse(&self, poly: &[i64]) -> Vec<i64> {
-        let mut result = poly.to_vec();
+        let result = poly.to_vec();
         // Implementasi Inverse Butterfly dengan Modular Inversion
         result
     }

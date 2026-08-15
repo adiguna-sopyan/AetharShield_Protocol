@@ -7,7 +7,7 @@ pub struct LweEngine {
 }
 
 impl LweEngine {
-    pub new() -> Self {
+    pub fn new() -> Self {
         Self {
             n: DIMENSION_N,
             q: MODULUS_Q,
